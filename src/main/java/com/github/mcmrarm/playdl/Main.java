@@ -4,6 +4,7 @@ import com.github.mcmrarm.playdl.proto.GooglePlay;
 import sun.rmi.runtime.Log;
 
 import java.io.*;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -28,7 +29,7 @@ public class Main {
         } else {
             System.out.print("Do you want to use x86 as the architecture? [y/N]: ");
             String x86 = reader.readLine();
-            if (x86.equalsIgnoreCase("y")) {
+            if (x86.toLowerCase().startsWith("y")) {
                 DeviceInfo.isX86 = true;
             }
 
