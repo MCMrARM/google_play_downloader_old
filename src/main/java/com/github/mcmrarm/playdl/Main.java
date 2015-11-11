@@ -45,6 +45,12 @@ public class Main {
             writer.write(aId + "\n");
             writer.flush();
             writer.close();
+
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
         LoginManager lmgr = new LoginManager("androidmarket", "com.android.vending");
