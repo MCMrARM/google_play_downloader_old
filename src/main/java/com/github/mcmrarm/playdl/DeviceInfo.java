@@ -16,7 +16,7 @@ public class DeviceInfo {
     static public final String BOOTLOADER = "desktop";
     static public final String ID = "desktop/desktop/desktop:6.0/BUILDN/BUILDN:user/release-keys";
 
-    static public boolean isX86 = true;
+    static public boolean isX86 = false;
     static public String lang = "en";
     static public String androidId;
 
